@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/font.css">
+    
+    <!--CDN Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- fav-icon -->
+    <link rel="shortcut icon" href="">
+
+    <title>Beautya</title>  
+
+  </header>
+<body>
+  <!--header-->
+  <nav>
+    <div class="Nav-Content">
+        <div class="section_nav">
+             <!----------Left Nav---------->
+            <div class="left_nav  ">
+                <div class="section-log ">
+                    <div class="box-img-log">
+                        <img src="/images/logo.svg" alt="">
+                    </div>  
+                </div>
+            </div>
+           <!----------Center Nav---------->
+           <div class="center_nav">
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+              <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+              <li><a href="#">Women Make UP</a></li>
+              <li>
+                <a href="#" class="desktop-item">Women Skincare</a>
+                <input type="checkbox" id="showMega">
+                <label for="showMega" class="mobile-item">Women Skincare</label>
+                <div class="mega-box">
+                  <div class="content">
+                    <div class="row">
+                      <header>By Category</header>
+                      <ul class="mega-links">
+                        <li><a href="#">Cleansers</a></li>
+                        <li><a href="#">Exfoliators</a></li>
+                        <li><a href="#">Toners</a></li>
+                        <li><a href="#">Retinols</a></li>
+                        <li><a href="#">Peels And Masques</a></li>
+                        <li><a href="#">Moisturizer</a></li>
+                        <li><a href="#">Night cream</a></li>
+                        <li><a href="#">Facial oil</a></li>
+                        <li><a href="#">Sunscreen</a></li>
+                        <li><a href="#">Eye Care</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <header>By Skin Condition</header>
+                      <ul class="mega-links">
+                        <li><a href="#">Brightening</a></li>
+                        <li><a href="#">Acne</a></li>
+                        <li><a href="#">Anti-ageing</a></li>
+                        <li><a href="#">Redness</a></li>
+                        <li><a href="#">Sensitive Skins</a></li>
+                        <li><a href="#">Sun Protection</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <header>Collection</header>
+                      <ul class="mega-links">
+                        <li><a href="#">Beautya Cleansing</a></li>
+                        <li><a href="#">Beautya Prestige</a></li>
+                        <li><a href="#">Beautya Prestige</a></li>
+                        <li><a href="#">Beautya Light-In-White</a></li>
+                        <li><a href="#">Capture Totale</a></li>
+                        <li><a href="#">Capture Youth</a></li>
+                        <li><a href="#">Capture Dreamskin</a></li>
+                        <li><a href="#">One Essential</a></li>
+                        <li><a href="#">Professional Solution</a></li>
+                        <li><a href="#">Beautya Hydra Life</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <img src="/images/nav_image.png" alt="">
+                      <div class="image_content">
+                      <h6>capture totale super potent rich cream</h6>
+                      <p>Global age-defying rich cream - intense 
+                        nourishment & revitalization</p>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">Gifs & Sets</a></li>
+              <li><a href="#">Branches</a></li>
+              <li><a href="#">Our Brand</a></li>
+            </ul>
+             <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+          </div>
+          
+            <!----------Right Nav---------->
+
+            <div class="right_nav">
+            <!---// Search Bar Products //--->
+            <!-- search Icon -->
+            <button class="Search_Icon" data-modal-target="#modal">
+              <img src="/images/search icon.svg" alt="">
+          </button>
+            <div class="modal" id="modal">
+              <!-- search -->
+              <div class="container">
+          <div class="Search_Box">
+                  <div id="search-container">
+                      <input type="search" id="search-input" placeholder="What Are You Looking For?"  >
+                      <img src="/images/search.svg" alt="">
+                  </div>
+          </div>
+                  <!-- button category-->  
+                  <h3> Product Categories</h3>
+                  <h5> Product Categories</h5>
+              <div class="categories">
+                  <button class="button-value"onclick="filterProduct('a')">a</button>
+                  <button class="button-value"onclick="filterProduct('b')">b</button>
+                  <button class="button-value"onclick="filterProduct('c')">c</button>
+                  <button class="button-value"onclick="filterProduct('d')">d</button>
+                  <button class="button-value"onclick="filterProduct('e')">e</button>
+              </div>
+              <!-- import product json-->
+              <h3>popular Product</h3>
+              <h5>popular Product</h5>
+              <div class="products"></div>
+              <a href="#">View All</a>
+          </div>
+          </div>
+          <div id="overlay"></div>
+          <div id="overlay"></div>
+            <!--/ language -->
+            <div class="lang-menu">
+              <div class="selected-lang">
+                  English
+              </div>
+              <ul>
+                <li>
+                  <a href="#" class="fa">Pearsin</a>
+                </li>
+                <li>
+                  <a href="" class="en">English</a>
+                </li>
+                </ul>
+          </div>
+          </div>
+          
+          </div>
+         
+    </div>
+    
+</nav>
+  <!-- Slider -->
+<section class="sliderhome">
+  <div class="container-slider">
+    <div class="slider">
+      <div class="slider-item active">
+        <img src="/images/BannerImage1.png" class="img-slider" />
+       <h1 id="slider_text"> Unlock Your Natural Glow 1</h1>
+       <button id="slider_btn"><a href="#" class="a"> Know More 1 </a></button>
+      </div>
+      <button type="button" class="prev" ><i class="icofont icofont-ui-previous"></i></button>
+      <button type="button" class="next" ><i class="icofont icofont-ui-next"></i></button>
+    </div>
+  </div>
+
+  <div class="pagination">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+</section>  
+
+  <!-- Products-Categorie -->
+
+  <section class="Products_Categorie">
+    <h4>Products’ categories</h4>
+    <h1>Products’ categories</h1>
+
+    <div class="cat-container">
+    <!-- cat 1 -->
+      <div class="Producte_Cat">
+          <img src="/images/Products_Cate1.png" alt="">
+          <a href="#">women make up</a>
+      </div>
+      <!-- cat 2 -->
+      <div class="Producte_Cat">
+          <img src="/images/Products_Cate2.png" alt="">
+          <a href="#">women make up</a>
+      </div>
+      <!-- cat 3 -->
+      <div class="Producte_Cat">
+          <img src="/images/Products_Cate3.png" alt="">
+          <a href="#">women make up</a>
+      </div>
+      </div>
+  </section>
+
+  <!-- New Virual Skincare -->
+
+  <section class="Virtual_Skincare_Analysis">
+    <div class="Analysis">
+      <div class="Analysis-container">
+         <h1> NEW Virtual Skincare Analysis</h1>
+      <div class="Analysis_text">
+        <h4> NEW Virtual Skincare Analysis</h4>
+       
+          <p>Looking for a Full Skincare Routine? Our NEW
+            Virtual Skincare Analysis Tool Evaluates Your Skin And Provides 
+            The Most Personalized Recommendations.</p>
+        <span>Scan With Your Phone To Get Started</span>
+        <p>Or</p> 
+        <div class="Analysis-btn">
+        <a href="#">Answer A Few Questions</a>
+        <a href="#">take a selfie</a>
+        </div>
+      </div>
+    <img src="/images/qrcode.png" class="Analysis_Qrcode">
+    <img src="/images/introduction.png" class="Analysis_Image">
+      </div>
+      </div>
+    </section>
+  
+  <!-- OurBestSellers -->
+  <section class="OueBestSeller">
+    <h1>Our Best Seller</h1>
+    <h4> Our Best Seller</h4>
+  <!-- Swiper -->
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="products"></div>
+      </div>
+    </div>
+     <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  </div>
+  </section>
+
+  <!-- NewIn 
+
+  <section class="NewIn">
+    <h4>New in</h4>
+    <h1>New in</h1>
+       <!--  Carousel 
+  <!-- Swiper 
+  <div class="new-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="products"></div>
+      </div>
+    </div>
+     <!-- If we need pagination 
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons 
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  </div>
+  </section>
+-->
+
+  <!-- Special Offers -->
+
+  <section class="Special_Offers_Banner">
+    <div class="Special_Offers">
+      <img src="/images/SpecialOffers.png">
+      <h1>Special offers</h1>
+      <div class="Special_Offers_text">
+        <h4>Special offers</h4>
+        <h3>save up to 50%</h3>
+         <h4>Mother’s Day is coming! </h4>
+         <p>Mother’s Day is coming! <br/>For everything she’s given you, it's time to give back. Shower her with love, happiness, and the best of Beautya. </p>
+         <p>visit your local beautya branches to find out more about our special offers in make up and skincare products. </p>
+        <a href="#">Find Branches</a>
+      </div>
+
+      </div>
+  </section>
+
+
+
+<!-- Our Brand-->
+
+<section class="Our_Brand">
+  <div class="About_Brand">
+    <h1>Our Brand</h1>
+    <div class="Brand_text">
+      <h4> Our Brand</h4>
+        <p>We Belive That Beauty Thrives In Diversity And Discovery. Our Purpose Is To
+          Expand The Way The World Sees Beauty By Empowering The Extraordinary In
+          Each Of Us.
+        </p> 
+      <a href="#">Discover More</a>
+    </div>
+  <img src="/images/ourbrand.png" class="Brand_Image">
+    </div>
+</section>
+
+
+<!-- Blog  -->
+  <section id="OurBlog">
+    <!-- blog heading -->
+    <div class="blog-heading">
+      <h1>Our Blog</h1>
+      <h4>Our Blog</h4>
+      <a href="#">view all</a>
+    </div>
+    <!-- blog slider -->
+    <div class="blog-swiper">
+      <div class="swiper-wrapper">
+        <!-- blog 1 -->
+        <div class="swiper-slide">
+          <div class="blog-img">
+            <img src="/images/blogimage1.png" alt="Blog">
+          </div>
+          <div class="blog-details">
+            <a href="#" class="blog-title">How to get clear skin fast</a> 
+            <span>Skincare / Dr. Wade Warren / Jan 20, 2021</span>
+            <p>Many people find it difficult to get clear skin. The methods for getting clear skin will vary...</p>
+          </div>
+        </div>
+        <!-- blog 2 -->
+        <div class="blog swiper-slide">
+          <div class="blog-img">
+            <img src="/images/blogimage2.png" alt="Blog">
+          </div>
+          <div class="blog-details">
+            <a href="#" class="blog-title">How to get clear skin fast</a> 
+            <span>Skincare / Dr. Wade Warren / Jan 20, 2021</span>
+            <p>Many people find it difficult to get clear skin. The methods for getting clear skin will vary...</p>
+          </div>
+        </div>
+        <!-- blog 3 -->
+        <div class="blog swiper-slide">
+          <div class="blog-img">
+            <img src="/images/blogimage3.png" alt="Blog">
+          </div>
+          <div class="blog-details">
+            <a href="#" class="blog-title">How to get clear skin fast</a> 
+            <span>Skincare / Dr. Wade Warren / Jan 20, 2021</span>
+            <p>Many people find it difficult to get clear skin. The methods for getting clear skin will vary...</p>
+          </div>
+        </div>
+        
+      </div>
+       <!-- pagination -->
+    <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section class="Footer">
+    <!--Value Proposition -->
+    <div class="Top_Icons">
+      <div class="Icon">
+        <img src="/images/Rabbit_icon.svg"  alt="">
+          <div class="Text">No tests on animals</div>
+      </div>
+      <div class="Icon">
+        <img src="/images/Leaf_icon.svg" alt="">
+         <div class="Text">No animal-derived ingredients</div>
+      </div>
+      <div class="Icon">
+        <img src="/images/Wheat_icon.svg" alt="">
+          <div class="Text">No gluten, or gluten byproducts</div>
+      </div>
+      <div class="Icon">
+        <img src="/images/Lamp_icon.svg" alt="">
+          <div class="Text">Recyclable packaging</div>
+      </div>
+    </div>
+    <!-- footer item -->
+  <div class="footer-row">
+    <div class="Left_Footer">
+    <div class="footer-col">
+      <h4>How can we Help?</h4>
+      <ul class="links">
+        <li><a href="#">find My Local Beautya</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Our Brand</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="Center_Footer">
+    <div class="footer-col">
+      <h4>Products</h4>
+      <ul class="links">
+        <li><a href="#">Women Make up</a></li>
+        <li><a href="#">Women Skincare</a></li>
+        <li><a href="#">Gifts & Sets</a></li>
+      </ul>
+    </div>
+    </div>
+    <div class="Right_Footer">
+    <div class="footer-col">
+      <h4>keep in touch with beautya</h4>
+      <p>
+        Join the Beautya newsletter and be
+        first to hear about news, offers and skincare advice
+      </p>
+      <form class="email-inputs">
+        <input type="email" name="emailInput"  class="emailInput" placeholder="Email Address" required>
+        <div class="email-checkbox">
+          <input type="checkbox" name="checkboxInput" class="checkboxInput" required>
+          <p> By submitting your email, you agree to receive advertising emails from Beautya. Please review our Privacy Policy, which includes our Financial Incentive Notice for CA residents. </p>
+        </div>
+        <button class="main-btn" type="submit"> 
+          <a href="#" > Subscribe </a>
+        </button>
+      </form> 
+    </div>
+  </div>
+  </div>
+
+    <!-- Social Media And  ContactUs-->
+    <section class="SocialmediaANDContactUs">
+      <div class="SocialMediaIcons">
+        <div class="IconButton">         
+          <a href="#">
+            <img src="/images/Instagram.svg" alt="">
+          </a>
+        </div>
+        <div class="IconButton">
+          <a href="#">
+            <img src="/images/Facebook.svg" alt="">
+          </a> 
+        </div>
+        <div class="IconButton">
+          <a href="#">
+             <img src="/images/Twitter.svg" alt="">
+          </a>
+        </div>
+        <div class="IconButton">
+          <a href="#">
+            <img src="/images/Pinterest.svg" alt="">
+          </a>
+        </div>
+        <div class="IconButton">
+          <a href="#">
+            <img src="/images/Reddit.svg" alt="">
+          </a>
+        </div>
+        <div class="IconButton">
+          <a href="#">
+            <img src="/images/Tiktok.svg" alt="">
+          </a>
+        </div>
+      </div>
+      <div class="ContactUs">
+        <div class="Call">  
+          <img src="/images/Call.svg" alt="">
+          <div class="Text_ContactUs">1-802-526-2463</div>
+        </div>
+        <div class="ContactUs_line"></div>
+        <div class="location">
+          <img src="/images/location.svg" alt="">
+          <div class="Text_ContactUs">Dr. Richardson, California</div>
+        </div>
+      </div>
+    </section> 
+    <!-- Copy Right --> 
+    <section class="CopyRight">
+      <div class="Copyright_Text">2023 Beautya. All Rights Reserved.</div>
+      <div class="TermsAndPrivacy">
+        <div class="TermsAndPrivacy_Text">Terms & Conditions</div>
+        <div class="TermsAndPrivacy_Text">Privacy Policy</div>
+      </div>
+    </section>
+
+</section>
+
+
+<!-- asli-->
+   <script src="/js/Main.js" type="module"></script>
+<!--CDN Swiper js -->   
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/js/OurBestSeller.js"></script>
+   <script src="/js/OurBlog.js"></script>
+   <script src="/js/NewIN.js"></script>
+   <script src="/js/Navbar.js"></script>
+</body>
+</html>

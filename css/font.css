@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/fonts/OpenSans-Regular.ttf') format('ttf');
+  src: url('/fonts/OpenSans-Bold.ttf') format('ttf');
+  src: url('/fonts/OpenSans-SemiBold.ttf') format('ttf');
+
+  font-weight: normal;
+ }
+ 
+ 
+  .Disply-1{
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 64px;
+    letter-spacing: 0;
+    line-height: 140%;
+  }
+  
+  .Disply-2 {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 56px;
+    letter-spacing: 0;
+    line-height: 120%;
+  }
+
+  h1 {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 44px;
+    letter-spacing: 0;
+    line-height: 140%;
+  }
+
+  h2 {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 0;
+    line-height: 140%;
+  }
+
+  h3 {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 0;
+    line-height: 140%;
+  }
+
+  h4 {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 24px;
+    letter-spacing: 0;
+    line-height: 140%;
+  }
+
+  h5 {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 140%;
+  }
+
+  h6 {
+    font-family: "Open Sans";
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 140%;
+  }
+
+  .Body-XL {
+    font-family: "Open Sans";
+    font-weight: Regular;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 180%;
+  }
+
+  
+  .Body-LG {
+    font-family: "Open Sans";
+    font-weight: Regular;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 180%;
+  }
+
+  .Body-MD {
+    font-family: "Open Sans";
+    font-weight: Regular;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 180%;
+  }
+
+  .Body-SM {
+    font-family: "Open Sans";
+    font-weight: Regular;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 180%;
+  }
+
+  .Body-XS {
+    font-family: "Open Sans";
+    font-weight: Regular;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 180%;
+  }
+  
+  .Caption-md {
+    font-family: "Open Sans";
+    font-weight: Regular;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 180%;
+  }
+
+  .Caption-lg {
+    font-family: "Open Sans";
+    font-weight: SemiBold;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 140%;
+  }
+
+  .Caption-sm {
+    font-family: "Open Sans";
+    font-weight: SemiBold;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: 180%;
+  }
+
+  .Button-LG {
+    font-family: "Open Sans";
+    font-weight: Regular;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 140%;
+  }
+
+  .Button-SM {
+    font-family: "Open Sans";
+    font-weight: Regular;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 180%;
+  }
+
+  .Overline-LG {
+    font-family: "Open Sans";
+    font-weight: Regular;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 24%;
+  }
+
+  .Overline-Sm {
+    font-family: "Open Sans";
+    font-weight: SemiBold;
+    font-size: 12px;
+    letter-spacing: 0.8;
+    line-height: Auto;
+  }
