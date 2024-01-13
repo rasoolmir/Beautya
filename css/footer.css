@@ -1,0 +1,422 @@
+/* ---- // FOOTER // -----*/
+
+/* ---- // All Of The FOOTER  // -----*/
+
+/*--  footer item -- */
+.Footer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background: #3D021E;
+  max-width: 100%;
+}
+
+.Footer .footer-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.5rem;
+  padding: 60px;
+  }
+  
+.Left_Footer {
+  width: 222px;
+  height: 227px;
+}
+
+  .Footer .footer-row .footer-col {
+    width: 100%;
+  height: 321px;
+  }
+  .Footer .footer-row .footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .Footer .footer-col .links {
+    padding: 0px 0px;
+  }
+  
+  .Footer .footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .Footer .footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+  }
+  
+  .Footer .footer-col .links li a:hover {
+    color: #fff;
+  }
+  
+  .Footer .footer-col p {
+    color: #bfbfbf;
+  }
+
+  .Center_Footer {
+    width: 129px;
+    height: 153px;
+  }
+
+  .Right_Footer {
+    width: 520px;
+    height: 271px;
+  }
+
+  .email-inputs {
+    width: 348px;
+    height: 56px;
+    right: 197px;
+    top: 163px;
+    position: absolute;
+    border-bottom: 0.50px #CBCBCB solid;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    display: inline-flex;
+  }
+  
+  
+  .email-inputs .emailInput {
+    width: 342px;
+    padding: 20px 5px;
+    background: transparent;
+    border-color: transparent;
+    outline: none;
+    flex: 1 1 0;
+    color: white;
+    font-size: 20px;
+    line-height: 36px;
+    word-wrap: break-word;
+  }
+  
+  .email-inputs .email-checkbox {
+    width: 16px;
+    height: 16px;
+    left: 0px;
+    top: 70px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+  }
+  
+  
+  .email-inputs .email-checkbox p {
+    width: 493px;
+    left: 23px;
+    top: -17px;
+    position: absolute;
+    color: white;
+    font-size: 14px;
+    line-height: 23.2px;
+  }
+  
+  
+   .main-btn {
+    width: 104px;
+    height: 48px;
+    left: 363px;
+    top: 10px;
+    position: absolute;
+    opacity: 0.40;
+    border: 1px rgb(255, 255, 255) solid;
+    background-color: #0c0c0c00;
+
+  }
+  .main-btn a {
+    color: white; 
+    font-size: 16px;
+    font-weight: 400; 
+    text-transform: capitalize; 
+    line-height: 28.80px;
+  }
+  
+  
+  /*-- Value Proposition -- */
+  
+  .Top_Icons {
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    position: absolute;
+    background: #FBEFF2;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+
+  }
+
+  .Top_Icons .Icon {
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    padding: 0px 40px;
+}
+  
+  .Top_Icons .Icon img {
+    width: 30px; 
+    height: 40px; 
+    transform-origin: 0 0;
+  
+  }
+  
+  .Top_Icons .Icon .Text {
+    color: #79043C;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 20px;
+    word-wrap: break-word;
+    width: 179px;
+    align-self: stretch;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+    display: flex;
+  }
+  
+  
+  /*-- Social Media And ContactUs  -- */
+  
+  .SocialmediaANDContactUs {
+    width: 100%;
+    height: 69px;
+    top: 365px;
+    position: absolute;
+    background: #280114;
+  }
+  
+  .SocialMediaIcons {
+    right: 50px;
+    top: 15px;
+    position: absolute;
+    display: inline-flex;
+  }
+  
+  .IconButton {
+    padding: 2px;
+    align-items: center;
+    display: flex;
+  }
+  
+  .Text_ContactUs {
+    color: white; 
+    font-size: 14px; 
+  }
+  
+  .ContactUs_line {
+    width: 24px; 
+    height: 0px; 
+    left: 250px; 
+    top: 47px; 
+    position: absolute; 
+    transform: rotate(-90deg); 
+    transform-origin: 0 0; 
+    border: 0.50px #FA58A6 solid;
+  }
+  
+  .Call {
+    left: 258px;
+    top: 22px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    display: inline-flex;
+  }
+  
+  .location {
+    left: 50px;
+    top: 22px;
+    position: absolute;
+    align-items: center;
+    display: inline-flex;
+  }
+  
+  /* Copy Right */
+  
+  .CopyRight {
+    top: 434px;
+    position: absolute;
+    background: #14010A;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 757px;
+    display: inline-flex;
+    width: 100%;
+    height: 56px;
+  }
+  
+  .Copyright_Text {
+    color: #CBCBCB;
+    font-size: 13px;
+    padding-top: 16px;
+  
+  }
+  
+
+  .TermsAndPrivacy {
+  gap: 24px;
+  display: inline-flex;
+  padding-top: 16px;
+  }
+  .TermsAndPrivacy_Text {
+    color: #CBCBCB;
+    font-size: 12px;
+  }
+
+@media (max-width: 768px) {
+  .Footer {
+    width: 100%;
+    background: #3D021E;
+    max-width: 100%;
+    height: 1028px;
+  }
+
+  .Footer .footer-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 15px;
+    top: 81px;
+    position: absolute;
+  }
+
+  .Left_Footer {
+    width: 222px;
+    height: 166px;
+  }
+
+  .Center_Footer {
+    width: 111px;
+    height: 110px;
+  }
+
+  .Right_Footer {
+    width: 332px;
+    height: 236px;
+  }
+
+  .email-inputs {
+    width: 408px;
+    height: 56px;
+    left: 13px;
+    top: 526px;
+  }
+  
+
+  
+  .email-inputs .email-checkbox {
+    width: 16px;
+    height: 16px;
+    left: 0px;
+    top: 70px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+  }
+  
+  
+  .email-inputs .email-checkbox p {
+    width: 400px;
+    position: absolute;
+  }
+  
+  
+  .main-btn {
+    width: 407px;
+    height: 32px;
+    left: 1px;
+    top: 137px;
+  }
+  
+  .main-btn a {
+    color: white; 
+    font-size: 16px;
+    font-weight: 400; 
+    text-transform: capitalize; 
+    line-height: 28.80px;
+  }
+
+
+  .footer-col form {
+    display: block;
+  }
+
+  .ContactUs_line {
+    display: none;
+  }
+
+  .Top_Icons {
+    width: 100%;
+    height: 110px;
+    top: 0px;
+    position: absolute;
+    background: #FBEFF2;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .Top_Icons .Icon {
+    align-items: center;
+    gap: 10px;
+    display: flex;
+  }
+
+  .SocialmediaANDContactUs {
+    width: 100%;
+    height: 160px;
+    top: 790px;
+    position: absolute;
+    background: #280114;
+  }
+
+  .SocialMediaIcons {
+    right: 101px;
+    top: 104px;
+    position: absolute;
+    display: inline-flex;
+  }
+
+  .Call {
+    top: 57px;
+    position: absolute;
+    left: 17px;
+  }
+  .location {
+    top: 17px;
+    position: absolute;
+    left: 17px;
+  }
+
+  .CopyRight {
+    top: 950px;
+    position: absolute;
+    background: #14010A;
+    justify-content: center;
+    align-items: flex-start;
+    display: inline-flex;
+    width: 100%;
+    height: 77px;
+  }
+  
+  .TermsAndPrivacy {
+    gap: 24px;
+    display: inline-flex;
+    top: 28px;
+    position: absolute;
+    left: 17px;
+  }
+  
+  .Copyright_Text {
+    color: #CBCBCB;
+    font-size: 13px;
+    position: absolute;
+    left: 17px;
+  }
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <nav>
+    <div class="Nav-Content">
+        <div class="section_nav">
+             <!----------Left Nav---------->
+            <div class="left_nav  ">
+                <div class="section-log ">
+                    <div class="box-img-log">
+                        <img src="/images/logo.svg" alt="">
+                    </div>  
+                </div>
+            </div>
+           <!----------Center Nav---------->
+           <div class="center_nav">
+            <input type="radio" name="slider" id="menu-btn">
+            <input type="radio" name="slider" id="close-btn">
+            <ul class="nav-links">
+              <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+              <li><a href="#">Women Make UP</a></li>
+              <li>
+                <a href="#" class="desktop-item">Women Skincare</a>
+                <input type="checkbox" id="showMega">
+                <label for="showMega" class="mobile-item">Women Skincare</label>
+                <div class="mega-box">
+                  <div class="content">
+                    <div class="row">
+                      <header>By Category</header>
+                      <ul class="mega-links">
+                        <li><a href="#">Cleansers</a></li>
+                        <li><a href="#">Exfoliators</a></li>
+                        <li><a href="#">Toners</a></li>
+                        <li><a href="#">Retinols</a></li>
+                        <li><a href="#">Peels And Masques</a></li>
+                        <li><a href="#">Moisturizer</a></li>
+                        <li><a href="#">Night cream</a></li>
+                        <li><a href="#">Facial oil</a></li>
+                        <li><a href="#">Sunscreen</a></li>
+                        <li><a href="#">Eye Care</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <header>By Skin Condition</header>
+                      <ul class="mega-links">
+                        <li><a href="#">Brightening</a></li>
+                        <li><a href="#">Acne</a></li>
+                        <li><a href="#">Anti-ageing</a></li>
+                        <li><a href="#">Redness</a></li>
+                        <li><a href="#">Sensitive Skins</a></li>
+                        <li><a href="#">Sun Protection</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <header>Collection</header>
+                      <ul class="mega-links">
+                        <li><a href="#">Beautya Cleansing</a></li>
+                        <li><a href="#">Beautya Prestige</a></li>
+                        <li><a href="#">Beautya Prestige</a></li>
+                        <li><a href="#">Beautya Light-In-White</a></li>
+                        <li><a href="#">Capture Totale</a></li>
+                        <li><a href="#">Capture Youth</a></li>
+                        <li><a href="#">Capture Dreamskin</a></li>
+                        <li><a href="#">One Essential</a></li>
+                        <li><a href="#">Professional Solution</a></li>
+                        <li><a href="#">Beautya Hydra Life</a></li>
+                      </ul>
+                    </div>
+                    <div class="row">
+                      <img src="/nav_image.png" alt="">
+                      <div class="image_content">
+                      <h6>capture totale super potent rich cream</h6>
+                      <p>Global age-defying rich cream - intense 
+                        nourishment & revitalization</p>
+                      </div>  
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li><a href="#">Gifs & Sets</a></li>
+              <li><a href="#">Branches</a></li>
+              <li><a href="#">Our Brand</a></li>
+            </ul>
+             <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+          </div>
+          
+            <!----------Right Nav---------->
+
+            <div class="right_nav">
+            <!---// Search Bar Products //--->
+            <!-- search Icon -->
+            <button class="Search_Icon" data-modal-target="#modal">
+              <img src="/images/search icon.svg" alt="">
+          </button>
+            <div class="modal" id="modal">
+              <!-- search -->
+              <div class="container">
+          <div class="Search_Box">
+                  <div id="search-container">
+                      <input type="search" id="search-input" placeholder="What Are You Looking For?"  >
+                      <img src="/images/search.svg" alt="">
+                  </div>
+          </div>
+                  <!-- button category-->  
+                  <h5> Product Categories</h5>
+              <div class="categories">
+                  <button class="button-value"onclick="filterProduct('a')">a</button>
+                  <button class="button-value"onclick="filterProduct('b')">b</button>
+                  <button class="button-value"onclick="filterProduct('c')">c</button>
+                  <button class="button-value"onclick="filterProduct('d')">d</button>
+                  <button class="button-value"onclick="filterProduct('e')">e</button>
+              </div>
+              <!-- import product json-->
+              <h5>popular Product</h5>
+              <div class="products"></div>
+              <a href="#">View All</a>
+          </div>
+          </div>
+          <div id="overlay"></div>
+          <div id="overlay"></div>
+            <!--/ language -->
+            <div class="lang-menu">
+              <div class="selected-lang">
+                  English
+              </div>
+              <ul>
+                <li>
+                  <a href="#" class="fa">Pearsin</a>
+                </li>
+                <li>
+                  <a href="" class="en">English</a>
+                </li>
+                </ul>
+          </div>
+          </div>
+          
+          </div>
+         
+    </div>
+    
+</nav>
+    <script src="/js/Navbar.js"></script>
+    
+</body>
+</html>
