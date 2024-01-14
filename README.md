@@ -7,3 +7,5 @@ The products section is dynamically designed using the Fetch API and a JSON file
 You Can see this project online :  [ here](https://beautya-mu.vercel.app).
 
 The Figma file has been used : [here](https://www.figma.com/community/file/1231630796369241790).
+
+![image](https://github.com/rasoolmir/Beautya/assets/138984913/6220aa16-8363-4bb3-a348-438682e2f039)
