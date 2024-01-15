@@ -73,6 +73,7 @@
   body {
     background: #FAF9F5;
     font-family: "OpenSans";
+    overflow-x: hidden;
     
   }
   img {
