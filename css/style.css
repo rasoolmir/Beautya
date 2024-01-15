@@ -1048,10 +1048,8 @@ display: none;
     top: 53%;
     font-size: 24px;
     line-height: 140%;
-
-    left: 78px;
-    
-
+    left: 30px;
+    width: 400px;
   }
   .slider .slider-item button {
     top: 73%;
@@ -1059,6 +1057,7 @@ display: none;
     font-size: 14px;
     width: 141px;
     height: 40px;
+    font-family: 'open_sansregular';
     
   }
   .prev , .next{ 
@@ -1066,8 +1065,14 @@ display: none;
   }
   .pagination {
     height: 10px;
-      width: 90px;
-    }
+    width: 90px;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 28%;
+    left: 46%;
+  }
     
     .dot {
     height: 4px;
@@ -1152,7 +1157,7 @@ display: none;
     object-position: center;
 }
 .Producte_Cat a {
-  font-size: 14px;
+  font-size: 11px;
   line-height: 140%;
 }
 
@@ -1275,7 +1280,7 @@ display: none;
 
 .Analysis_Image {
   height: 198px;
-  width: 546px;
+  width: 518px;
   grid-row: 2;
 }
 .Analysis_text {
@@ -1308,6 +1313,7 @@ display: none;
   padding: 10px 0px;
   padding-top: 10px;
   font-family: 'open_sansregular';
+  text-transform: lowercase;
 }
 
 .Analysis-btn {
@@ -1319,8 +1325,8 @@ display: none;
   color: #ffffff;
   font-size: 14px;
   font-family: 'open_sansregular';
-  padding: 0px 10px;
-  padding-top: 0px;
+  padding: 0px 20px;
+  padding-top: 5px;
   border: 2px solid var(--primary);
   transition: all 0.3s ease;
   width: 130px;
@@ -1467,6 +1473,7 @@ display: none;
     line-height: 140%;
 
   }
+  
   .swiper .swiper-button-prev, 
   .swiper .swiper-button-next {
     display: none;
@@ -1719,12 +1726,10 @@ display: none;
   }
   
 .Special_Offers_text h4:nth-of-type(2) {
-    font-size: 16px;
-
-
+    font-size: 14px;
     color: var(--black);
     display: block;
-    
+    font-family: 'open_sanssemibold';
   }
   .Special_Offers_text {
     padding: 10px 40px;
@@ -1743,7 +1748,7 @@ display: none;
     line-height: 25px;
     letter-spacing: 1px;
     width: 358px;
-
+    font-family: 'open_sansregular';
   }
 .Special_Offers_Banner {
   background: var(--primary-25);
@@ -1754,16 +1759,17 @@ display: none;
 
 .Special_Offers_text a {
   float: left;
-  background: var(--white);
+  background: #ffffff00;
   color: var(--primary);
-  font-size: 20px;
-
+  font-size: 14px;
   padding: 10px 10px;
   border: 2px solid var(--primary);
   transition: all 0.3s ease;
   text-decoration: none;
   margin: 10px;
   margin-left: 112px;
+  text-transform: lowercase;
+
 }
 .Special_Offers_text a:hover{
   color: var(--white);
@@ -1772,7 +1778,7 @@ display: none;
 
 .Special_Offers img {
   height: 239px;
-  width: 460px;
+  width: 411px;
   grid-row: 2;
 }
 }
@@ -1885,11 +1891,15 @@ width: 1101px;
     width: 430px;
     padding: 10px 40px;
   }
+  .Brand_text p{
+    font-size: 14px;
+    line-height: 140%;
+  }
   .Brand_text a {
     float: left;
     background: var(--white);
     color: var(--primary);
-    font-size: 20px;
+    font-size: 14px;
     padding: 10px 10px;
     border: 2px solid var(--primary);
     transition: all 0.3s ease;
@@ -1977,6 +1987,8 @@ font-size: 20px;
 color: var(--black);
 line-height: 140%;
 font-family: 'open_sansbold';
+text-align: left;
+
 }
 
 .swiper-slide.blog-details .blog-title:hover{ 
@@ -1997,6 +2009,7 @@ color: var(--gray-606060);
 font-size: 14px;
 margin: 4px 0px;
 font-family: 'open_sansregular';
+text-align: left;
 }  
 
 .swiper-slide .blog-details p {
@@ -2005,6 +2018,7 @@ font-family: 'open_sansregular';
   margin: 10px 0px;
   line-height: 180%;
   font-family: 'open_sansregular';
+  
 }
 
   @media screen and (max-width: 768px) {
@@ -2039,10 +2053,13 @@ font-family: 'open_sansregular';
       right: 5px;
       top: 505px;
       font-size: 16px;
+      font-family: 'open_sansregular';
       }
       .blog-swiper {
-        width: 320px;
+        width: 357px;
         height: 430px;
+        overflow: hidden;
+        white-space: normal;
       }
       
       .blog-slide {
@@ -2068,15 +2085,15 @@ font-family: 'open_sansregular';
       .swiper-slide .blog-details {
         height: 146px;
       }
-      .swiper-pagination {
+      .blog-swiper-pagination {
         position: relative;
         text-align: center;
         transition: .3s opacity;
         transform: translate3d(0,0,0);
         z-index: 10;
-        top: 19px;
+        
       }
-      .swiper-pagination .swiper-pagination-bullet {
+      .blog-swiper-pagination .blog-swiper-pagination-bullet {
         width: 24px;
         height: 4px;
         background: var(--primary);
@@ -2127,12 +2144,11 @@ font-family: 'open_sansregular';
 .Left_Footer {
   width: 210px;
   height: 227px;
-  margin: 30px 0px;
+  margin: 30px 20px;
 }
 
   .Footer .footer-row .footer-col {
-    width: 100%;
-  height: 321px;
+
   }
   .Footer .footer-row .footer-col h4 {
     color: #fff;
@@ -2161,6 +2177,7 @@ font-family: 'open_sansregular';
   
   .Footer .footer-col p {
     color: #bfbfbf;
+    font-family: 'open_sansregular';
   }
 
   .Center_Footer {
@@ -2215,7 +2232,7 @@ font-family: 'open_sansregular';
   }
   
   
-  .email-inputs .email-checkbox p {
+  .email-inputs .email-checkbox p{
     width: 493px;
     left: 23px;
     top: 0px;
@@ -2400,7 +2417,7 @@ font-family: 'open_sansregular';
     display: grid;
     grid-template-columns: 1fr;
     padding: 15px;
-    top: 97px;
+    top: 18px;
     position: absolute;
   }
   .Footer .footer-row .footer-col h4 {
@@ -2409,29 +2426,43 @@ font-family: 'open_sansregular';
   .Footer .footer-row .footer-col h3 {
     display: block;
     color: #fff;
-    font-size: 19px;
-    line-height: 180%;
+    font-size: 16px;
+    line-height: 140%;
+
+  }
+
+  .Footer .footer-col .links li a {
+    font-size: 14px;
+    line-height: 140%;
+
   }
 
   .Left_Footer {
     width: 222px;
     height: 166px;
+    margin: 30px 0px;
   }
 
   .Center_Footer {
     width: 111px;
     height: 110px;
+    margin: 0px;
+    margin-top: -60px;
   }
 
   .Right_Footer {
     width: 391px;
     height: 236px;
+    margin: 0px;
+    margin-top: -31px;
   }
-
+  .Footer .footer-col p {
+    font-size: 14px;
+  }
   .email-inputs .emailInput {
     width: 387px;
     flex: 1 1 0;
-    font-size: 20px;
+    font-size: 14px;
     line-height: 180%;
   }
   
@@ -2446,24 +2477,24 @@ font-family: 'open_sansregular';
   
   
   .email-inputs .email-checkbox p {
-    width: 383px;
+    display: block;
+    max-width: 369px;
     font-size: 14px;
     line-height: 140%;
   }
-  
-  
   .main-btn {
-    width: 404px;
+    width: 320px;
     height: 40px;
-    left: 1px;
-    top: 146px;
+    left: 7%;
+    top: 170px;
   }
   
   .main-btn a {
     color: white; 
-    font-size: 16px;
+    font-size: 14px;
     text-transform: capitalize; 
-    line-height: 28.80px;
+    line-height: 24%;
+    font-family: 'open_sansregular';
   }
 
 
@@ -2477,7 +2508,7 @@ font-family: 'open_sansregular';
 
   .Top_Icons {
     width: 100%;
-    height: 90px;
+    height: 100px;
     top: 0px;
     position: absolute;
     background: #FBEFF2;
@@ -2500,8 +2531,9 @@ font-family: 'open_sansregular';
     transform-origin: 0 0;
   }
   .Top_Icons .Icon .Text {
-    font-size: 14px;
+    font-size: 12px;
     width: 144px;
+    font-family: 'open_sansregular';
   }
   .SocialmediaANDContactUs {
     width: 100%;
