@@ -162,17 +162,18 @@
   .nav-links li{
     list-style: none;
   }
-  .nav-links li a{
+
+  .nav-links li a {
     color: var(--gray-202020);
     text-decoration: none;
-    font-size: 18px;
-    padding: 9px 15px;
+    font-size: 16px;
+    padding: 0px 16px;
     border-radius: 5px;
     transition: all 0.3s ease;
     line-height: 140%;
-    
-
+    font-family: 'open_sansbold';
   }
+
   .nav-links li a:hover{
     color: var(--primary-600);
   }
@@ -215,9 +216,10 @@
   
   .content .row .image_content h6 {
     color: var(--black);
-    font-size: 14px;
+    font-size: 13px;
     display: block;
     line-height: 140%;
+    font-family: 'open_sanssemibold';
   }
   
   .content .row .image_content p {
@@ -225,12 +227,15 @@
     font-size: 12px;
     display: block;
     line-height: 180%;
+    font-family: 'open_sansregular';
   }
   
   .content .row header{
     color: var(--black);
     font-size: 16px;
     line-height: 140%;
+    font-family: 'open_sansbold';
+    
   }
   .content .row .mega-links{
     margin-left: -40px;
@@ -246,6 +251,7 @@
     font-size: 12px;
     display: block;
     line-height: 180%;
+    font-family: 'open_sansregular';
   }
   .row .mega-links li a:hover{
     color: var(--primary-600);
@@ -485,6 +491,7 @@
     display: block;
     line-height: 180%;
     color: var(--gray-606060);
+    font-family: 'open_sansregular';
   }
   
   #search-container img {
@@ -506,7 +513,7 @@
   left: 101px;
   position: absolute;
   top: 103px;
-  font-size: 20px;
+  font-size: 17px;
   color: var(--black);
   line-height: 140%;
   }
@@ -526,17 +533,15 @@
     border: none;
     text-align: left;
     height: 30px;
-
     font-size: 16px;
     line-height: 140%;
-    
-    
+    font-family: 'open_sansbold';
   }
   
   /* /// ---  json Products ----/// */
   
   .modal .container h5:nth-of-type(2) {
-    font-size: 20px;
+    font-size: 17px;
     text-align: left;
     left: 340px;
     position: absolute;
@@ -583,20 +588,23 @@
   
   .modal .products .title {
   color: var(--primary);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 180%;
+  font-family: 'open_sansregular';
   }
   
   .modal .products .description {
   color: var(--black);
   font-size: 12px;
   line-height: 180%;
+  font-family: 'open_sansregular';
   }
   
   .modal .products .category {
   color: var(--black);
   font-size: 12px;
   line-height: 180%;
+  font-family: 'open_sansregular';
   }
   
   .modal .container a {
@@ -606,6 +614,7 @@
     right: 130px;
     color: var(--primary);
     line-height: 180%;
+    font-family: 'open_sansregular';
   }
   
   @media screen and (max-width: 768px) {
@@ -728,7 +737,7 @@ display: none;
    
   
   .lang-menu {
-    width: 60px;
+    width: 87px;
     margin-top: 26px;
     text-align: right;
 
@@ -739,7 +748,16 @@ display: none;
     justify-content: space-between;
     line-height: 2;
     cursor: pointer;
+    text-align: left;
+    font-family: 'open_sansregular';
   }
+
+  .lang-menu .selected-lang img {
+    width: 24px;
+  }
+
+  
+
   
   .lang-menu ul {
     margin: 0;
@@ -749,7 +767,7 @@ display: none;
     border: 1px solid #f8f8f8;
     position: absolute;
     top: 30px;
-    width: 70px;
+    width: 90px;
     height: 90px;
     border-radius: 5px;
     box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
@@ -762,6 +780,7 @@ display: none;
     display: flex;
     justify-content: space-between;
     height: 30px;
+    font-family: 'open_sansregular';
   }
   
   .lang-menu ul li a {
@@ -769,6 +788,7 @@ display: none;
     width: 125px;
     padding: 5px 10px;
     display: block;
+    font-family: 'open_sansregular';
   }
   
   .lang-menu ul li:hover {
@@ -825,6 +845,7 @@ display: none;
       display: flex;
       align-items: center;
       margin-top: 12px;
+      
     }
 
     .center_nav .nav-links {
