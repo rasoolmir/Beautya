@@ -1270,6 +1270,11 @@ display: none;
   height: 281px;
   width: 546px;
 }
+
+.Analysis_Image img{
+  width: 100%;
+  height: 100%;
+}
 .Analysis {
   background: var(--primary-750);
   width: 1101px;
@@ -1361,6 +1366,11 @@ display: none;
   height: 198px;
   width: 100%;
   grid-row: 2;
+}
+
+.Analysis_Image img{
+  width: 100%;
+  height: 100%;
 }
 .Analysis_text {
   grid-row: 3;
@@ -1719,7 +1729,12 @@ display: none;
 
 .Special_Offers img {
   height: 315px;
-  width: 495px;
+  width: 100%;
+}
+
+.Special_Offers img img {
+  width: 100%;
+  height: 100%;
 }
 .Special_Offers {
   width: 1101px;
@@ -1787,48 +1802,53 @@ display: none;
     grid-template-rows: auto auto;
   }
 
-  .Special_Offers h1 {
+.Special_Offers h1 {
     font-size: 25px;
     display: block;
     grid-row: 1;
     margin: 10px auto;
     color: var(--black);
   }
-  .Special_Offers_text h4:nth-of-type(1) {
+.Special_Offers_text h4:nth-of-type(1) {
     display: none;
-  }
+}
 
 .Special_Offers img {
     height: 239px;
-    width: 70%;
+    width: 100%;
     grid-row: 2;
-  }
+}
+
+.Special_Offers img img {
+  width: 100%;
+  height: 100%;
+}
   
 .Special_Offers_text h4:nth-of-type(2) {
     font-size: 14px;
     color: var(--black);
     display: block;
     font-family: 'open_sanssemibold';
-  }
-  .Special_Offers_text {
+}
+.Special_Offers_text {
     padding: 10px 40px;
     width: 442px;
-  }
-  .Special_Offers_text h3 {
+}
+.Special_Offers_text h3 {
     display: none;
-  }
-  .Special_Offers_text p:nth-of-type(1) {
+}
+.Special_Offers_text p:nth-of-type(1) {
     display: none;
-  }
+}
 
-  .Special_Offers_text p:nth-of-type(2) {
+.Special_Offers_text p:nth-of-type(2) {
     color: var(--black);
     font-size: 14px;
     line-height: 25px;
     letter-spacing: 1px;
     width: 358px;
     font-family: 'open_sansregular';
-  }
+}
 .Special_Offers_Banner {
   background: var(--primary-25);
   width: 100%;
@@ -1855,25 +1875,20 @@ display: none;
   background: var(--primary);
 }
 
-.Special_Offers img {
-  height: 239px;
-  width: 411px;
-  grid-row: 2;
-}
+
 }
 @media screen and (min-width: 769px) { 
 
-  .Special_Offers h1 {
+.Special_Offers h1 {
     display: none;
-  }
-  .Special_Offers_text h4:nth-of-type(1) {
+}
+.Special_Offers_text h4:nth-of-type(1) {
     display: block;
-  }
-  .Special_Offers_text h4:nth-of-type(2){
+}
+.Special_Offers_text h4:nth-of-type(2){
     display:none;
-  }
-
-  }
+}
+}
 
 
 
