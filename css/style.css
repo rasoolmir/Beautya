@@ -484,9 +484,6 @@
   
   /*--- /// Search //// ----*/
   
-  
- 
-  
    /* ---///  Modal ///---- */
    .Search_Icon {
     border: none;
@@ -1163,6 +1160,12 @@ display: none;
     }
 }
 
+.container{
+  width: 1200px;
+  max-width: 90%;
+  margin: auto;
+}
+
   /* ---- //Products-Categories // ---- */
 
   .Products_Categorie {
@@ -1277,23 +1280,21 @@ display: none;
 }
 .Analysis {
   background: var(--primary-750);
-  width: 1101px;
+  width: 100%;
   height: 281px;
   max-width: 100%;
-  margin: 0 auto;
 }
 
 .Analysis-container {
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  margin: 10px 0px;
   height: 281px;
 }
 
 .Analysis_text {
   color: #ffffff;
-  width: 433px;
-  padding: 26px;
+  width: 474px;
+  padding: 20px;
   height: 277px;
 }
 .Analysis_text h4 {
@@ -1341,10 +1342,10 @@ display: none;
 }
 
   .Analysis-container h1 {
-    font-size: 24px;
+    font-size: 21px;
     display: block;
     grid-row: 1;
-    margin: 10px 30px;
+    margin: 10px 20px;
     color: var(--black);
   }
   .Analysis_text h4 {
@@ -1363,7 +1364,7 @@ display: none;
   }
 
 .Analysis_Image {
-  height: 198px;
+  height: 100%;
   width: 100%;
   grid-row: 2;
 }
@@ -1374,7 +1375,7 @@ display: none;
 }
 .Analysis_text {
   grid-row: 3;
-  width: 455px;
+  width: 93%;
 }
 .Analysis_text h6 {
   display: none;
@@ -1386,6 +1387,7 @@ display: none;
   line-height: 25px;
   letter-spacing: 1px;
   width: 358px;
+  max-width:358px;
 }
 .Analysis_text p:nth-of-type(2) {
   display: none;
@@ -1449,9 +1451,8 @@ display: none;
 /* ---- // OurBestSeller// -----*/
 
 .OueBestSeller {
-  width: 1101px;
+  width: 100%;
   height: 100%;
-  margin: 10px auto;
   text-align: center;
 }
 
@@ -1528,9 +1529,8 @@ display: none;
 
 @media screen and (max-width: 768px) { 
   .OueBestSeller {
-    width: 90%;
+    width: 100%;
     height: 100%;
-    margin: 10px auto;
     text-align: center;
   }
 
@@ -1737,10 +1737,9 @@ display: none;
   height: 100%;
 }
 .Special_Offers {
-  width: 1101px;
+  width: 100%;
   height: 315px;
   max-width: 100%;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -1779,7 +1778,7 @@ display: none;
     color: var(--white);
     font-size: 20px;
     padding: 10px 10px;
-    margin-top: 20px;
+    margin-top: 10px;
     border: 2px solid var(--primary);
     transition: all 0.3s ease;
     text-decoration: none;
@@ -1793,7 +1792,7 @@ display: none;
 @media screen and (max-width: 768px) {
 
   .Special_Offers {
-    width: 1120px;
+    width: 100%;
     height: 461px;
     max-width: 100%;
     margin: 0 auto;
@@ -1819,10 +1818,7 @@ display: none;
     grid-row: 2;
 }
 
-.Special_Offers img img {
-  width: 100%;
-  height: 100%;
-}
+
   
 .Special_Offers_text h4:nth-of-type(2) {
     font-size: 14px;
@@ -1832,7 +1828,7 @@ display: none;
 }
 .Special_Offers_text {
     padding: 10px 40px;
-    width: 442px;
+    width: 100%;
 }
 .Special_Offers_text h3 {
     display: none;
@@ -1846,7 +1842,7 @@ display: none;
     font-size: 14px;
     line-height: 25px;
     letter-spacing: 1px;
-    width: 358px;
+    width: 100%;
     font-family: 'open_sansregular';
 }
 .Special_Offers_Banner {
@@ -1904,16 +1900,15 @@ display: none;
 }
 .About_Brand {
 background: var(--primary-750);
-width: 1101px;
+width: 100%;
   height: 269px;
   max-width: 100%;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 .Brand_text {
   color: var(--white);
-  width: 640px;
+  width: 676px;
   padding: 50px ;
 
 }
@@ -1982,9 +1977,10 @@ width: 1101px;
 
   .Brand_text {
     color: var(--black);
-    width: 430px;
-    padding: 10px 40px;
+    width: 100%;
+    padding: 10px 10px;
   }
+  
   .Brand_text p{
     font-size: 14px;
     line-height: 140%;
@@ -2044,8 +2040,8 @@ width: 1101px;
   }
 
 .blog-swiper {
-  width: 1101px;
-  height: 474px;
+  width: 100%;
+  height: 100%;
   margin: 20px auto;
   
 }
@@ -2117,11 +2113,11 @@ text-align: left;
 
   @media screen and (max-width: 768px) {
     #OurBlog {
-      width: 90%;
-        height: 100%;
-        margin: 10px auto;
-        text-align: center;
+      width: 100%;
+      height: 100%;
+      text-align: left;
       }
+
     #blog {
       height: 544px;
       width: 342px;
@@ -2144,7 +2140,7 @@ text-align: left;
     .blog-heading a { 
       color: var(--primary);
       position: relative;
-      right: 5px;
+      left: 150px;
       top: 505px;
       font-size: 16px;
       font-family: 'open_sansregular';
@@ -2167,8 +2163,8 @@ text-align: left;
         margin-right: 10px;
       }
       .swiper-slide {
-        width: 320px;
-        margin-right: 10px;
+        width: 100%;
+        height: 392px;
       }
       
       .swiper-slide .blog-img {
