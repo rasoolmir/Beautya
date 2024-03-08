@@ -83,6 +83,7 @@
   /* -- Back To Top button -- */
   html{
     scroll-behavior: smooth;
+    /*font-size: 62.5%;*/
   }
   
   .back-to-top {
@@ -1283,6 +1284,7 @@ display: none;
   width: 100%;
   height: 281px;
   max-width: 100%;
+  text-transform: capitalize;
 }
 
 .Analysis-container {
@@ -1356,7 +1358,6 @@ display: none;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-    margin: 10px 0px;
   }
 
   .Analysis_Qrcode {
@@ -1375,7 +1376,7 @@ display: none;
 }
 .Analysis_text {
   grid-row: 3;
-  width: 93%;
+  width: 100%;
 }
 .Analysis_text h6 {
   display: none;
@@ -1386,8 +1387,8 @@ display: none;
   font-size: 14px;
   line-height: 25px;
   letter-spacing: 1px;
-  width: 358px;
-  max-width:358px;
+  width: 100%;
+  max-width:100%;
 }
 .Analysis_text p:nth-of-type(2) {
   display: none;
@@ -1408,7 +1409,7 @@ display: none;
 }
 
 .Analysis-btn {
-  width: 320px;
+  width: 100%;
   height: 40px;
 }
 .Analysis-btn a:nth-of-type(2){
@@ -1585,139 +1586,6 @@ display: none;
   }
 }
 
-
-/* ---- // NewIn // -----*/
-
-
-/* ---- // OurBestSeller and NewIn // -----*/
-
-
-/* ---- // New in page Landing // -----*/
-
-.NewIn {
-  background: #3d021e;
-  width: 100%;
-  height: 475px;
-}
-
-.NewIn h4 {
-  font-size: 19px;
-
-  margin-bottom: 10px;
-  color: #fff;
-  text-align: center;
-}
-
-.new-swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  background: var(--white);
-  margin: 20px auto;
-  
-}
-
-.swiper-slide img {
-  height: 300px;
-}
-.swiper-slide  img img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.swiper-slide .title {
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--primary);
-  font-size: 16px;
-  line-height: 140%;
-}
-
-.swiper-slide .description {
-  font-size: 14px;
-  line-height: 180%;
-  color: var(--black);
-}
-
-.swiper-slide .category {
-  font-size: 14px;
-  line-height: 180%;
-  color: var(--black);
-}
-.swiper-slide .price {
-  text-align: center;
-  font-size: 18px;
-  line-height: 180%;
-  color: var(--black);
-}
-
-.swiper .swiper-button-next, 
-.swiper .swiper-button-prev {
-  position: absolute;
-  top: 169px;
-  width: 25px;
-  height: 43px;
-  z-index: 10;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  color: var(--swiper-navigation-color,--black);
-  background: #fff;
-}
-
-@media screen and (max-width: 768px) { 
-  .NewIn h1 {
-    font-size: 24px;
-    color: var(--black);
-
-    line-height: 140%;
-    display: block;
-  }
-
-  .NewIn h4{
-    display: none;
-  }
-  .swiper-button-prev {
-    display: none;
-  }
-  .swiper-button-next {
-    display: none;
-  }
-  .swiper-pagination {
-
-    display: block;
-  }
-  .swiper-pagination .swiper-pagination-bullet {
-    width: 24px;
-    height: 4px;
-    background: var(--primary);
-    border-radius: 0;
-  }
-}
-@media screen and (min-width: 769px) { 
-
-  .NewIn h1 {
-    display: none;
-  }
-  .NewIn h4 {
-    display: block;
-  }
-  .swiper-pagination {
-    display: none;
-  }
-  .swiper-button-prev {
-    display: block;
-  }
-  .swiper-button-next {
-    display: block;
-  }
-}
-
-
 /* ---- //  SpecialOffers page Landing // -----*/
 
 .Special_Offers_Banner {
@@ -1737,11 +1605,12 @@ display: none;
   height: 100%;
 }
 .Special_Offers {
+    display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
   height: 315px;
   max-width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  text-transform: capitalize;
 }
 .Special_Offers_text {
   width: 624px;
@@ -1848,7 +1717,7 @@ display: none;
 .Special_Offers_Banner {
   background: var(--primary-25);
   width: 100%;
-  height: 461px;
+  height: 500px;
   margin: 40px 0px;
 }
 
@@ -1910,6 +1779,7 @@ width: 100%;
   color: var(--white);
   width: 676px;
   padding: 50px ;
+  text-transform: capitalize;
 
 }
 .Brand_text h4 {
@@ -2175,7 +2045,7 @@ text-align: left;
       .swiper-slide .blog-details {
         height: 146px;
       }
-      .blog-swiper-pagination {
+      .blog-pagination .swiper-pagination {
         position: relative;
         text-align: center;
         transition: .3s opacity;
@@ -2183,13 +2053,15 @@ text-align: left;
         z-index: 10;
         
       }
-      .blog-swiper-pagination .blog-swiper-pagination-bullet {
+      .blog-pagination .swiper-pagination .blog-pagination .swiper-pagination-bullet {
         width: 24px;
         height: 4px;
         background: var(--primary);
         border-radius: 0;
       }
-}
+
+      
+    }
   @media screen and (min-width: 769px) { 
 
     .blog-heading h1 {
@@ -2198,7 +2070,7 @@ text-align: left;
     .blog-heading h4 {
       display: block;
     }
-    .swiper-pagination {
+    .blog-pagination .swiper-pagination {
       display: none;
     }
     .carousel .blog-box:nth-child(n+4) {
